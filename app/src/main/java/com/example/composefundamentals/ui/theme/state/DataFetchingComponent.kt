@@ -1,8 +1,11 @@
 package com.example.composefundamentals.ui.theme.state
 
+import android.widget.Toast
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -28,7 +31,7 @@ import kotlinx.coroutines.delay
 @Composable
  fun DataFetchingComponent() {
     var data by remember { mutableStateOf<List<String>?>(null) }
-
+    val context = LocalContext.current
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -36,7 +39,6 @@ import kotlinx.coroutines.delay
     ) {
         LaunchedEffect(Unit) {
             val result = fetchDataFromApi()
-            delay(12)
             data = result
         }
         if (data == null) {
@@ -51,15 +53,23 @@ import kotlinx.coroutines.delay
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                items(data!!.size) { index ->
-                    Text(text = data!![index],
-                        modifier = Modifier
-                            .background(Color.Red)
-                            .fillMaxSize(),
-                        color = Color.White,
-                        textAlign = TextAlign.Center
-                    )
+                data?.let{
+                    items(it.size) { index ->
+                        Text(text = data!![index],
+                            modifier = Modifier
+                                .background(Color.Red)
+                                .fillMaxSize()
+                                .padding(10.dp)
+                                .clickable {
+                                           Toast.makeText(context, data!![index],Toast.LENGTH_SHORT).show()
+                                },
+                            color = Color.White,
+                            textAlign = TextAlign.Center
+                        )
+                        Spacer(modifier = Modifier.size(10.dp))
+                    }
                 }
+
             }
         }
     }
@@ -67,8 +77,7 @@ import kotlinx.coroutines.delay
 
 
 suspend fun fetchDataFromApi(): List<String> {
-
-    delay(3000)
+    
     return generateItemList()
 }
 
@@ -85,7 +94,5 @@ suspend fun generateItemList(): List<String> {
 @Preview(showBackground = true)
 @Composable
 fun DataFetchingComponentPreview() {
-
     DataFetchingComponent()
-
 }
