@@ -5,9 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.composefundamentals.ui.theme.state.DialogScreen
-import com.example.composefundamentals.ui.theme.state.ScaffoldExample
-import com.example.composefundamentals.ui.theme.state.Screen
+import com.example.composefundamentals.ui.theme.state.BlogPostComposeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +14,7 @@ class MainActivity : ComponentActivity() {
             Surface(
                 modifier = Modifier
             ) {
-
-                DialogScreen()
+                BlogPostComposeScreen()
             }
         }
     }
