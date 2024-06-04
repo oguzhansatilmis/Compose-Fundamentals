@@ -5,7 +5,8 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.composefundamentals.ui.theme.state.BlogPostComposeScreen
+import com.example.composefundamentals.ui.theme.basic.VerticalListView
+import com.example.composefundamentals.ui.theme.tablayout.TabLayout
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : ComponentActivity() {
             Surface(
                 modifier = Modifier
             ) {
-                BlogPostComposeScreen()
+                TabLayout()
             }
         }
     }
