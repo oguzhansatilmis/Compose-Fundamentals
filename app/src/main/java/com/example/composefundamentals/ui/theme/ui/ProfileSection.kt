@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.composefundamentals.R
 @Composable
 fun ProfileSection(
-    @DrawableRes fistImageId: Int,
+    @DrawableRes firstImageId: Int,
     text: String,
     modifier: Modifier = Modifier,
     iconRight: @Composable () -> Unit = {},
@@ -30,7 +30,7 @@ fun ProfileSection(
     ) {
 
         ProfilePicture(
-            imageId = fistImageId,
+            imageId = firstImageId,
             contentDescription = null,
             size = size.profileIconSize
         )
@@ -72,7 +72,7 @@ object ProfileSectionSizes {
 fun PreviewProfileSection() {
 
     ProfileSection(size =  ProfileSectionSizes.medium(),
-        fistImageId = R.drawable.food10,
+        firstImageId = R.drawable.food10,
         text = "asdasd"
     )
 }
@@ -82,7 +82,7 @@ fun PreviewProfileSection() {
 fun PreviewProfileSection2() {
 
     ProfileSection(size =  ProfileSectionSizes.small(),
-        fistImageId = R.drawable.food10,
+        firstImageId = R.drawable.food10,
         text = "asdasd"
     )
 }

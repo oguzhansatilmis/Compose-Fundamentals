@@ -11,6 +11,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composefundamentals.R
+import com.example.composefundamentals.ui.theme.util.DemoItem
 
 
 @Composable
@@ -26,7 +27,8 @@ fun PostImage(
         modifier = modifier
             .fillMaxWidth()
             .height(450.dp),
-        contentScale = ContentScale.Crop)
+        contentScale = ContentScale.Crop
+    )
 
 }
 
@@ -35,8 +37,7 @@ fun PostImage(
 @Composable
 fun PreviewPostImage(){
     PostImage(
-        R.drawable.camelia,
-        null,
-        Modifier
+        imageId = DemoItem.tweetList.first { it.tweetImageId != 0 }.tweetImageId,
+        null
     )
 }

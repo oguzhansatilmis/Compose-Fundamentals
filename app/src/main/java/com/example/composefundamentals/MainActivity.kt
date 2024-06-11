@@ -7,6 +7,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.composefundamentals.ui.theme.basic.VerticalListView
 import com.example.composefundamentals.ui.theme.tablayout.TabLayout
+import com.example.composefundamentals.ui.theme.ui.PostInteractionBar
+import com.example.composefundamentals.ui.theme.ui.PostItem
+import com.example.composefundamentals.ui.theme.util.DemoItem
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +19,13 @@ class MainActivity : ComponentActivity() {
             Surface(
                 modifier = Modifier
             ) {
-                TabLayout()
+                PostItem(
+                    post = DemoItem.tweetList[1],
+                    isLiked = Random.nextBoolean(),
+                    onLikeClicked = {},
+                    onCommentsClicked = {},
+                    onSendClicked = {}
+                )
             }
         }
     }
