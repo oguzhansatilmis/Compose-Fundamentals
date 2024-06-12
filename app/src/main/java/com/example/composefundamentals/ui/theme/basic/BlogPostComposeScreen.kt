@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.state
+package com.example.composefundamentals.ui.theme.basic
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

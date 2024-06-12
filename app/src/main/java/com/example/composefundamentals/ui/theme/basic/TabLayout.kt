@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.tablayout
+package com.example.composefundamentals.ui.theme.basic
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
@@ -35,7 +35,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composefundamentals.ui.theme.util.DemoItem
+import com.example.composefundamentals.ui.theme.demo.util.DemoItem
 
 private enum class DemoTabs(val value: String) {
     APPLE("Apple"),

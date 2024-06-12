@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.ui
+package com.example.composefundamentals.ui.theme.demo.instagram.profile
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -12,7 +12,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.composefundamentals.ui.theme.util.DemoItem
+import com.example.composefundamentals.ui.theme.demo.util.DemoItem
 
 
 @Composable

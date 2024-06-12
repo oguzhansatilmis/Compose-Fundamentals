@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.basic
+package com.example.composefundamentals.ui.theme.list
 
 import android.content.Context
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composefundamentals.ui.theme.util.DemoItem
+import com.example.composefundamentals.ui.theme.demo.util.DemoItem
 
 
 @Composable

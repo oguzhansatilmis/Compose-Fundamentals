@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.ui
+package com.example.composefundamentals.ui.theme.demo.instagram.post
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -17,8 +17,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.wear.compose.material.ContentAlpha
 import androidx.wear.compose.material.LocalContentAlpha
-import com.example.composefundamentals.ui.theme.util.DemoItem
-import com.example.composefundamentals.ui.theme.util.Tweet
+import com.example.composefundamentals.ui.theme.demo.instagram.profile.ProfileSection
+import com.example.composefundamentals.ui.theme.demo.instagram.profile.ProfileSectionSizes
+import com.example.composefundamentals.ui.theme.demo.util.DemoItem
+import com.example.composefundamentals.ui.theme.demo.util.Tweet
 
 
 @Composable

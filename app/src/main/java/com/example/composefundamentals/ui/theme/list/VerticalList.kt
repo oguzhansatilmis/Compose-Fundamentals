@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.basic
+package com.example.composefundamentals.ui.theme.list
 
 import android.content.Context
 import android.widget.Toast
@@ -17,11 +17,11 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.composefundamentals.ui.theme.util.Item
+import com.example.composefundamentals.ui.theme.demo.util.Item
 
 
 @Composable
-fun VerticalListItem(item: Item,context: Context) {
+fun VerticalListItem(item: Item, context: Context) {
 
 
     Column(

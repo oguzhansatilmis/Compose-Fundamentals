@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.ui
+package com.example.composefundamentals.ui.theme.demo.instagram.post
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -10,19 +10,17 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composefundamentals.R
-import com.example.composefundamentals.ui.theme.util.DemoItem
+import com.example.composefundamentals.ui.theme.demo.util.DemoItem
 
 
 @Composable
 fun PostImage(
-    @DrawableRes imageId:Int,
+     @DrawableRes imageId:Int,
     contentDescription:String?,
     modifier:Modifier = Modifier
 ){
-
     Image(
-        painter = painterResource(id = imageId),
+        painter = painterResource(id =imageId),
         contentDescription = contentDescription,
         modifier = modifier
             .fillMaxWidth()

@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.util
+package com.example.composefundamentals.ui.theme.demo.util
 
 import com.example.composefundamentals.R
 
@@ -121,7 +121,6 @@ object DemoItem {
     )
 
     val tweetList = listOf(
-        tweet,
         tweet.copy(
             id = 2,
             author = "Google",
@@ -135,6 +134,7 @@ object DemoItem {
             author = "Amazon",
             handle = "@Amazon",
             authorImageId = R.drawable.p2,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -142,6 +142,7 @@ object DemoItem {
             author = "Facebook",
             handle = "@Facebook",
             authorImageId = R.drawable.p3,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -173,6 +174,7 @@ object DemoItem {
             author = "Tesla",
             handle = "@Tesla",
             authorImageId = R.drawable.p7,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -180,6 +182,7 @@ object DemoItem {
             author = "Microsoft",
             handle = "@Microsoft",
             authorImageId = R.drawable.p8,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -187,6 +190,7 @@ object DemoItem {
             author = "Tencent",
             handle = "@Tencent",
             authorImageId = R.drawable.p9,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -194,6 +198,7 @@ object DemoItem {
             author = "Snapchat",
             handle = "@Snapchat",
             authorImageId = R.drawable.p10,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -225,6 +230,7 @@ object DemoItem {
             author = "Youtube",
             handle = "@Youtube",
             authorImageId = R.drawable.p3,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -232,6 +238,7 @@ object DemoItem {
             author = "Gmail",
             handle = "@Gmail",
             authorImageId = R.drawable.p4,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -239,13 +246,7 @@ object DemoItem {
             author = "Android",
             handle = "@Android",
             authorImageId = R.drawable.p5,
-            time = "1h"
-        ),
-        tweet.copy(
-            id = 4,
-            author = "Whatsapp",
-            handle = "@Whatsapp",
-            authorImageId = R.drawable.p6,
+            tweetImageId = R.drawable.food16,
             time = "1h"
         ),
         tweet.copy(
@@ -271,20 +272,6 @@ object DemoItem {
             authorImageId = R.drawable.p9,
             tweetImageId = R.drawable.food10,
             time = "11m"
-        ),
-        tweet.copy(
-            id = 8,
-            author = "Airbnb",
-            handle = "@Airbnb",
-            authorImageId = R.drawable.p10,
-            time = "1h"
-        ),
-        tweet.copy(
-            id = 9,
-            author = "LinkedIn",
-            handle = "@LinkedIn",
-            authorImageId = R.drawable.p11,
-            time = "1h"
         ),
         tweet.copy(
             id = 6,

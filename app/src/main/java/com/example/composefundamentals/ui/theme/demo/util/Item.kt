@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.util
+package com.example.composefundamentals.ui.theme.demo.util
 
 data class Item(
     val id: Int,

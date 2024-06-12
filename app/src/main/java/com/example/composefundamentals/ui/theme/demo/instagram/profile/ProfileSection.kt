@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.ui
+package com.example.composefundamentals.ui.theme.demo.instagram.profile
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Row

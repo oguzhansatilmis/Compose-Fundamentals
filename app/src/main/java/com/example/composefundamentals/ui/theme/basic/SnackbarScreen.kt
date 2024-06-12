@@ -1,4 +1,4 @@
-package com.example.composefundamentals.ui.theme.state
+package com.example.composefundamentals.ui.theme.basic
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
