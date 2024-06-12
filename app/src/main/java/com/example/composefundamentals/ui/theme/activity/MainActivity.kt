@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.composefundamentals.ui.theme.demo.instagram.InstagramUi
+import com.example.composefundamentals.ui.theme.demo.twitter.ProfileInfo
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : ComponentActivity() {
             Surface(
                 modifier = Modifier
             ) {
-                InstagramUi()
+                ProfileInfo("asd","asd","qasd")
             }
         }
     }
