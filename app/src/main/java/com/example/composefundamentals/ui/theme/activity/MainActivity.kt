@@ -28,6 +28,9 @@ class MainActivity : ComponentActivity() {
 private fun deneme3(){
     println("asdasdsa")
 }
+private fun deneme5(){
+    println("qweqwewqewqewq")
+}
 
 
 
