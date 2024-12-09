@@ -27,8 +27,9 @@ class MainActivity : ComponentActivity() {
 
 private fun deneme3(){
     println("asdasdsa")
+    println("asdasdsa")
+    println("asdasdsa")
 }
-
 
 
 
