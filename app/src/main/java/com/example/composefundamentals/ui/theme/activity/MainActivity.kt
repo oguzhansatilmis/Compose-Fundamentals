@@ -16,6 +16,10 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier
             ) {
                 ProfileInfo("asd","asd","qasd")
+                ProfileInfo("asd123","asd","qasd")
+                ProfileInfo("asd123","asd","qasd")
+                ProfileInfo("asd123","asd","qasd")
+                ProfileInfo("asd123","asd","qasd")
             }
         }
     }
